@@ -83,6 +83,7 @@ class Shop(
                             "Общая сумма продаж: $profit"
                 )
             }
+
             else -> println("Введено неверное значение!\nПопробуйте еще раз\n\n")
 
         }
@@ -90,29 +91,7 @@ class Shop(
 
 
     override fun checkPhone(base: Int) {
-//        var profit = 0
-//        phones[base]?.forEach { i ->
-//            profit += i.profit
-//        }
-//        println(
-//            "Статистика продаж магазина в городе: ${this.city}:\nПродано телефонов:\n" +
-//                    "${phones[base]?.get(0)?.name} - ${phones[base]?.get(0)?.count} шт. На сумму ${
-//                        phones[base]?.get(
-//                            0
-//                        )?.profit
-//                    }\n" +
-//                    "${phones[base]?.get(1)?.name} - ${phones[base]?.get(1)?.count} шт. На сумму ${
-//                        phones[base]?.get(
-//                            1
-//                        )?.profit
-//                    }\n" +
-//                    "${phones[base]?.get(2)?.name} - ${phones[base]?.get(2)?.count} шт. На сумму ${
-//                        phones[base]?.get(
-//                            2
-//                        )?.profit
-//                    }\n" +
-//                    "Общая сумма продаж: $profit"
-//        )
+
         if (this.repair) {
             println("Отремонтировать телефон?\n1. Да\n2. Нет")
             when (readln()) {
